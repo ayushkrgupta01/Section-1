@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS</title>
+    <style>
+        p {
+            background-color: yellow;
+            font-size: 40px;
+        }
+
+        .myclass {
+            color: white;
+            background-color: blueviolet;
+        }
+
+        #myid {
+            text-align: center;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        .mybtn{
+            background-color: darkgreen !important;
+        }
+        #uniq-btn{
+            color: blueviolet;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color: red; font-size: 20px;">Inline CSS is used to style individual tags only.</h1>
+
+    <p>Internal CSS is used to style entire page once.</p>
+
+    <p class="myclass" id="myid">Name selector is used to select elemnet by their tag name.
+    Here the properties are override.
+    </p>
+    <h2 class="myclass">Class selector is used to select elements by their class name.</h2>
+
+    <h3 id="myid">ID selector is used to select element by their id name.</h3>
+
+    <button class="mybtn" id="uniq-btn" style="background-color: blue;">Priority</button>
+    <button class="mybtn mybtn2" >Priority2</button>
+
+    <br>
+    <br>
+
+    <button class="btn">Using External CSS</button>
+
+
+</body>
+
+</html>
